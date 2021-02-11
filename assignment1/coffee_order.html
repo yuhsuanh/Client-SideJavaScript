@@ -1,0 +1,94 @@
+<!-- 1.) Create an HTML file and name it LabOne_yourfirstname.html -->
+<!-- 2.) Create an external JavaScript file and attach this file to your HTML file using an appropriate script loading strategy.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 1</title>
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="coffee_order.css">
+	<script src="coffee_order.js" async></script>
+</head>
+
+<body>
+	<main class="container"> 
+		<div class="text-center">
+			<h1>COMP1073 - Assignment 1</h1>
+		</div>
+
+		<!-- Using this form to create an object through the object constructor -->
+		<form>
+			<fieldset>
+				<!-- Form Title -->
+				<legend>Coffee Order</legend>
+				<!-- Form Content -->
+				<div>
+					<label>Customer Name: </label>
+					<input type="text" id="name">
+				</div>
+				<div>
+					<label>Coffee Type:</label>
+					<select id="type">
+						<option>Americano</option>
+						<option>Cappuccino</option>
+						<option>Espresso</option>
+						<option>Flat White</option>
+						<option>Latte</option>
+						<option>Macchiato</option>
+						<option>Mocha</option>
+					</select>
+				</div>
+				<div>
+					<label>Size: </label>
+					<select id="size">
+						<option>Short</option>
+						<option>Tall</option>
+						<option>Grande</option>
+						<option>Venti</option>
+						<option>Trenta</option>
+					</select>
+				</div>
+				<div>
+					<label>Drizzle: </label>
+					<label><input type="radio" name="drizzle" value="true">Yes</label>
+					<label><input type="radio" name="drizzle" value="false" checked>No</label>
+				</div>
+				<div>
+					<label>Whipped Cream: </label>
+					<label><input type="radio" name="whippedCream" value="true">Yes</label>
+					<label><input type="radio" name="whippedCream" value="false" checked>No</label>
+				</div>
+				<div>
+					<label>Sweetener: </label>
+					<label><input type="radio" name="sweetener" value="true">Yes</label>
+					<label><input type="radio" name="sweetener" value="false" checked>No</label>
+				</div>
+				<div>
+					<label>Cold Foam: </label>
+					<label><input type="radio" name="coldFoam" value="true">Yes</label>
+					<label><input type="radio" name="coldFoam" value="false" checked>No</label>
+				</div>
+				<div>
+					<label>Dairy: </label>
+					<select id='dairy'>
+						<option>None</option>
+						<option>Cream</option>
+						<option>2% Milk</option>
+						<option>Almond Milk</option>
+					</select>
+				</div>
+				<div>
+					<button type="button" id="place_order">Place order</button>
+				</div>
+			</fieldset>
+		</form>
+
+		<!-- Using to display order on screen instead of alert or console -->
+		<div class="invoice-area">
+			<h3>Invoice</h3>
+			<textarea class="invoice"></textarea>
+		</div>
+	</main>
+</body>
+</html>

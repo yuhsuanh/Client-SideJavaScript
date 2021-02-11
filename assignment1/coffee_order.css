@@ -1,0 +1,33 @@
+/* Global */
+.text-center {
+	text-align: center;
+}
+
+/* Form area */
+form {
+	width: 50vw;
+	background-color: #F7F7F7;
+	font-size:18px;
+	margin: 20px auto;
+}
+
+form > fieldset > div {
+	margin: 10px 50px;
+}
+
+button {
+	width: 100%;
+	background-color: #FFE4C4;
+}
+
+/* Invoice area */
+.invoice-area {
+	text-align: center;
+}
+
+textarea {
+	width: 50vw;
+	height: 300px;
+	resize: none;
+}
+
