@@ -1,4 +1,4 @@
-//Get Webpage textarea 
+//Get textarea 
 let textarea = document.querySelector('textarea');
 
 //First Object Literal (my order)
@@ -32,7 +32,7 @@ const  coffeeOrder1 = {
 		if(this.dairy != 'None')
 			textarea.textContent += '\t- ' + this.dairy + '\n';
 	}
-}
+};
 
 //Second Object Literal (my friend's order)
 const  coffeeOrder2 = {
@@ -65,7 +65,7 @@ const  coffeeOrder2 = {
 		if(this.dairy != 'None')
 			textarea.textContent += '\t- ' + this.dairy + '\n';
 	}
-}
+};
 
 //Using dot notation to access the mehtod
 coffeeOrder1.orderInfo();
@@ -109,7 +109,7 @@ function CoffeeOrder(name, type, size, drizzle, whippedCream, sweetener, coldFoa
 //Get 'Checked' radio button value by name
 function getRadioCheckValueByName(name) {
 	var radios = document.getElementsByName(name);
-	for(i = 0; i < radios.length; i++) { 
+	for(var i = 0; i < radios.length; i++) { 
 		if(radios[i].checked) {
 			// console.log(radios[i].value == 'true');
 			return radios[i].value == 'true';

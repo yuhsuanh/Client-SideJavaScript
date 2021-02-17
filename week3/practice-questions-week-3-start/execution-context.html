@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Example One</title>
+    </head>
+    <body>
+        <script>
+            // put a number (1-4) to show the order in which the statements are processed
+            function catName() {
+                let name = 'Stevie Nicks';
+                return name;
+            }
+            
+            function greetCat() {
+                return 'Meow there ' + catName();
+            }
+
+            let greeting = greetCat();
+            alert(greeting);
+        </script>
+    </body>
+
+</html>

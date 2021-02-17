@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>COMP1073 - Intro to Objects: This </title>
+     <link href="https://fonts.googleapis.com/css?family=Pacifico|Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="main.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header> 
+        <h1> COMP1073 - What is This? </h1>
+        <p>The 'this' keyword is useful to make sure the proper values are being used when the member context changes. It refers to the current object the code is being written inside. 
+      </p>
+      </header>
+      <main>
+      </main>
+    </div><!--end container--> 
+    <script>
+      //what is 'this' all about?
+      const cat1 = {
+        name: 'May',
+        greeting: function() {
+          console.log('Hey there ' + this.name);
+        }
+      }
+
+      const cat2 = {
+        name: 'Minx',
+        greeting: function() {
+          console.log('Hey there ' + this.name);
+        }
+      }
+    </script>
+  </body>
+</html>
