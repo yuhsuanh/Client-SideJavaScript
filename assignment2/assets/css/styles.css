@@ -1,0 +1,8 @@
+form > div > button {
+    background: cyan;
+    width: 100%;
+}
+
+.option-width {
+    width: 200px;
+}

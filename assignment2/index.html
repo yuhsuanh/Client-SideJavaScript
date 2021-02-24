@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h1 class="text-center">My Weekly Goals</h1>
+            <form class="my-4">
+                <div class="form-row">
+                    <h3>Create a New Goal:</h3>
+                    <input class="form-control my-2" type="text" id="goal">
+                    <button class="btn btn-primary btn-sm mb-3" type="button" id="adding">Add</button>
+                </div>
+            </form>
+            <hr>
+            <div>
+                <div class="row mt-5">
+                    <div class="col">
+                        <h3 class="text-center">Processing Goals</h3>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-hover table-bordered" id="processing">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Goal</th>
+                                        <th class="text-center option-width">Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h3 class="text-center">Completed Goals</h3>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-hover table-bordered" id="completed">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Goal</th>
+                                        <th class="text-center option-width">Option</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <audio id="audioComplete" src="https://soundbible.com/mp3/Ta%20Da-SoundBible.com-1884170640.mp3" type="audio/mpeg"></audio>
+    <audio id="audioDelete" src="https://soundbible.com/mp3/Shotgun_Blast-Jim_Rogers-1914772763.mp3" type="audio/mpeg"></audio>
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
