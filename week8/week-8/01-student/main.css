@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, 
+body {
+  height: 100%; 
+  font-size: 1em; 
+}
+
+body {
+  display:flex; 
+  align-items: center; 
+  justify-content: center;
+  background-color: #FF007C; 
+}
+
+.container {
+  background-color: #fff; 
+  border-radius:5px; 
+  color: #333; 
+}
+
+h1 {
+  font-family: 'Sriracha', cursive;
+  font-size:6em;
+  padding-bottom: 30px;
+  text-align:center; 
+}
+
