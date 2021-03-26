@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Object Prototypes, Inheritance & Coffee</title>
+<script src="js/prototypes.js" async></script>
+<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+  <header>
+    <h1 class="new">Object Prototypes, Inheritance & Coffee!</h1>
+  </header>
+  <main>
+   <div class="flex">
+     <div class="giph padding">
+       <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/687qS11pXwjCM" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/hoppip-coffee-time-adventure-687qS11pXwjCM">via GIPHY</a></p>
+     </div><!--end giph div-->
+     <div class="content">
+       <section>
+         <h2> A Prototype-Based Language </h2>
+        <p> In JavaScript, <em>prototypes</em> allow objects to <em>inherit</em> features from one another.This is why JavaScript is often called a <em>prototype-based language.</em></p>
+       </section>
+
+       <section>
+        <h2> The Prototype Chain</h2>
+        <p> In order to provide inheritance, objects can have a <em>prototype object</em>. Think of this as a template object that it inherits it's methods and properties from. An object's prototype object may also have a prototype object which it inherits it's properties and methods from. This creates the <em>prototype chain</em>.</p>
+        <p>One important thing to note about object prototypes, however,is that properties and methods are defined on the prototype property of the Object's constructor function, not the object instances themselves. It's important to understand that the object's prototype is the property on each instance and the prototype property on the constructor function is the property on the constructor. Methods and properties are not copied from one object to another in the prototype chain. They are accessed by <em>walking up the chain</em> as described above.</p>
+       </section>
+      </div><!--end content div-->
+    </div> <!--end flex div-->
+    <div class="flex">
+    <div class="content padding">
+       <section>
+        <h2> The Prototype Property </h2>
+         <p>Inherited properties and methods are defind on the <em>prototype property</em> (think of it like a subnnamespace). The <em>prototype property's value is an object</em>, which acts as a storage container for storing properties and methods that we want objects further down the prototype chain to inherit. </p>
+       </section>
+
+       <section>
+         <h2> The Constructor Property </h2>
+         <p>
+          Constructor functions prototype property object contains a constructor property that points to the original constructor function. This means that the constructor property is available to object instances. We can use this property to determine the name of the constructor function as well as create new object instances without referencing the original constructor function.
+         </p>
+       </section>
+
+
+      </div>
+      <div class="giph">
+        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/eWLDhSJ206rUQ" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/coffee-gif-i-seached-teh-need-tag-and-easybeinggreene-came-up-eWLDhSJ206rUQ">via GIPHY</a></p>
+      </div>
+    </div><!--end flex -->
+
+    <div class ="flex">
+      <div class="giph padding">
+        <div style="width:100%;height:0;padding-bottom:114%;position:relative;"><iframe src="https://giphy.com/embed/10sKNgit3jiU2A" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/la-library-go-set-a-watchman-10sKNgit3jiU2A">via GIPHY</a></p>
+      </div>
+      <div class="content">
+      <section>
+           <h2> Modifying Prototypes </h2>
+           <p> We can modify the prototype property on our constructor function. In fact, it's a good idea to add our methods to the prototype property object of our constructor function instead of inside the constructor function itself. By doing so, we ensure that methods are always available to all object instances created using the constructor function and we avoid defining our methods every time an object instance is created, making our code more performant.</p>
+           <p> Although it's a good idea to define our methods on the prototype property of our constructor function, properties are not as flexible. As such, we want to stick to creating our properties inside the constructor function.</p>
+        </section>
+
+
+       <section>
+         <h2> Prototypal Inheritance </h2>
+         <p> Using what we know about prototypal inheritance, we also create our own objects that inherit from other objects.</p>
+       </section>
+
+       <section>
+         <p>This can be a little confusing..let's take a look at an example .. with coffee!</p>
+         <p> Check out the MDN Web Docs Object Prototype article <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes">here</a>
+         </p>
+       </section>
+      </div><!--end content-->
+    </div><!--end flex -->
+    <section class="yourOrder">
+       <h3> How Do You Like Your Coffee?</h3>
+
+
+    </section>
+  </main>
+
+  <footer>
+    <p>COMP1073 - Object Prototypes, Inheritance & Coffee! </p>
+  </footer>
+  </div>
+</body>
+</html>

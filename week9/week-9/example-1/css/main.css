@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+  background-image:url('../assets/image-coffee-unsplash.jpg');
+  background-attachment:fixed; 
+  background-repeat:no-repeat;
+  background-size:cover; 
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9); 
+}
+
+h1 {
+  padding-top: 50px; 
+  color: #654321;
+  padding-bottom: 1px; 
+  text-align:center; 
+}
+
+h2 {
+  color: #b24d31;
+  padding-bottom: 15px; 
+}
+
+h1, 
+h2, 
+h3 {
+  font-family: 'Acme', sans-serif;
+}
+
+section {
+  padding-bottom: 20px;  
+}
+
+.flex {
+  display:flex; 
+  align-items:center; 
+}
+
+.giph {
+  width: 35%; 
+}
+
+.padding {
+  padding-right: 5%; 
+}
+
+.content {
+  padding-top:25px; 
+  width: 60%; 
+}
+
+.yourOrder {
+  font-size: 1.5rem; 
+  color: #fff; 
+  text-align:center; 
+  background-color: #654321;
+  border-radius: 1rem; 
+}
+
+.yourOrder h3 {
+  color: #fff; 
+  text-align:center; 
+  padding-top: 25px; 
+}
+
+footer {
+  padding: 25px 0; 
+}
