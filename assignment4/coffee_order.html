@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="coffee_order.css">
+	<style type="text/css">
+		/* style for css painting api: rating)*/
+		:root {
+		  --rating: 3;
+		  --star-corners: 5;
+		}
+		.rating {
+			max-width: 500px;
+			min-width: 200px;
+			margin: 0 auto;
+			height: 60px;
+			background: #000;
+			stroke: orange;
+			fill: orange;
+			background: paint(star-rating);
+		}
+	</style>
+
+	<script src="coffee_order.js" async></script>
+	<script src="weather_marquee.js" async></script>
+</head>
+
+<body>
+	<marquee id="weather_marquee"></marquee>
+	<main class="container"> 
+		<div class="text-center">
+			<h1>COMP1073 - Assignment 4</h1>
+		</div>
+
+		<!-- Using this form to create an object through the object constructor -->
+		<form>
+			<fieldset>
+				<!-- Form Title -->
+				<legend>Coffee Order</legend>
+				<!-- Form Content -->
+				<div>
+					<label>Customer Name: </label>
+					<input type="text" id="name">
+				</div>
+				<div>
+					<label>Coffee Type:</label>
+					<select id="type">
+						<option>Americano</option>
+						<option>Cappuccino</option>
+						<option>Espresso</option>
+						<option>Flat White</option>
+						<option>Latte</option>
+						<option>Macchiato</option>
+						<option>Mocha</option>
+					</select>
+				</div>
+				<div>
+					<label>Size: </label>
+					<select id="size">
+						<option>Short</option>
+						<option>Tall</option>
+						<option>Grande</option>
+						<option>Venti</option>
+						<option>Trenta</option>
+					</select>
+				</div>
+				<div>
+					<label>Drizzle: </label>
+					<label><input type="radio" name="drizzle" value="true">Yes</label>
+					<label><input type="radio" name="drizzle" value="false" checked>No</label>
+				</div>
+				<div>
+					<label>Whipped Cream: </label>
+					<label><input type="radio" name="whippedCream" value="true">Yes</label>
+					<label><input type="radio" name="whippedCream" value="false" checked>No</label>
+				</div>
+				<div>
+					<label>Sweetener: </label>
+					<label><input type="radio" name="sweetener" value="true">Yes</label>
+					<label><input type="radio" name="sweetener" value="false" checked>No</label>
+				</div>
+				<div>
+					<label>Cold Foam: </label>
+					<label><input type="radio" name="coldFoam" value="true">Yes</label>
+					<label><input type="radio" name="coldFoam" value="false" checked>No</label>
+				</div>
+				<div>
+					<label>Dairy: </label>
+					<select id='dairy'>
+						<option>None</option>
+						<option>Cream</option>
+						<option>2% Milk</option>
+						<option>Almond Milk</option>
+					</select>
+				</div>
+				<div>
+					<button type="button" id="place_order">Place order</button>
+				</div>
+			</fieldset>
+		</form>
+
+		<!-- Using to display order on screen instead of alert or console -->
+		<div class="invoice-area">
+			<h3>Invoice</h3>
+			<textarea class="invoice" readonly></textarea>
+		</div>
+		
+		<!-- Browser API Test (Painting API) -->
+		<br>
+		<br>
+		<div style="text-align-last: center;">
+			<h3>Use Browswer Paint API to darw Rating</h3>
+			<div style="margin: 35px 0;">
+				<section class="rating"></section>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
