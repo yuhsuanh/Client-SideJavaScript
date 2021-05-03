@@ -5,7 +5,7 @@ let jsonURL = "https://yuhsuanhuang-tw.github.io/COMP1073-Demo/assignment3/produ
 fetch(jsonURL).then(function(response) {
   return response.json();
 }).then(function(data) {
-  console.log(data.length);
+  console.log(data['cats']);
   appendData(data);
 });
 
